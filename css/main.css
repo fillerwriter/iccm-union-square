@@ -10,3 +10,18 @@ html, body {
 }
 
 .BrBG .q0-5{fill:rgb(166,97,26)} .BrBG .q1-5{fill:rgb(223,194,125)} .BrBG .q2-5{fill:rgb(245,245,245)} .BrBG .q3-5{fill:rgb(128,205,193)} .BrBG .q4-5{fill:rgb(1,133,113)}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    width: 30%;
+    min-width: 250px;
+}
+.info h2 {
+    line-height: 1.5em;
+    margin: 0;
+}
