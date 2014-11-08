@@ -12,10 +12,10 @@ $(document).ready(function() {
   $.get('data.json', function(data) {
     L.geoJson(data, {
       style: function (feature) {
-        var style = {color: '#F00'};
+        var style = {fillColor: '#F00', stroke: "true", color: "#666"};
 
         if (feature.properties.Rating) {
-          style.color = colors[feature.properties.Rating];
+          style.fillColor = colors[feature.properties.Rating];
         }
 
         return style;
