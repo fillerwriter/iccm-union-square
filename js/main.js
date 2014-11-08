@@ -12,7 +12,13 @@ $(document).ready(function() {
   $.get('data.json', function(data) {
     L.geoJson(data, {
       style: function (feature) {
-        return {color: "#F00"};
+        var style = {color: '#F00'};
+
+        if (feature.properties.Rating) {
+          style.color = colors[feature.properties.Rating];
+        }
+
+        return style;
       },
       pointToLayer: function(feature, latlng) {
         return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.85});
