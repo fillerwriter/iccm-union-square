@@ -15,7 +15,7 @@ $(document).ready(function() {
         var style = {fillColor: '#F00', stroke: "true", color: "#666"};
 
         if (feature.properties.Rating) {
-          style.fillColor = colors[feature.properties.Rating];
+          style.fillColor = colors[feature.properties.Rating - 1];
         }
 
         return style;
