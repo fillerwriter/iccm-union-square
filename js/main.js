@@ -7,4 +7,16 @@ $(document).ready(function() {
   });
 
   L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png').addTo(map);
+
+
+  $.get('data.json', function(data) {
+    L.geoJson(data, {
+      style: function (feature) {
+        return {color: "#F00"};
+      },
+      pointToLayer: function(feature, latlng) {
+        return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.85});
+      },
+    }).addTo(map);
+  });
 });
