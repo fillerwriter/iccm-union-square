@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.BrBG .q0-5{fill:rgb(166,97,26)} .BrBG .q1-5{fill:rgb(223,194,125)} .BrBG .q2-5{fill:rgb(245,245,245)} .BrBG .q3-5{fill:rgb(128,205,193)} .BrBG .q4-5{fill:rgb(1,133,113)}
